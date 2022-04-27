@@ -20,7 +20,7 @@ describe('App', () => {
     const button = screen.getByRole('button', {name: 'Change to blue'});
     expect(button).toBeEnabled();
     // checks if the checkbox is unchecked
-    const checkbox = screen.getByRole('checkbox', {name: 'Checkbox'});
+    const checkbox = screen.getByRole('checkbox');
     expect(checkbox).not.toBeChecked();
     });
 });
